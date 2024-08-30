@@ -34,7 +34,7 @@ def translate_text(text, target_language='en'):
     return translation.text
 
 def play_videos_in_sequence(video_paths):
-    """Play a sequence of videos in a resized OpenCV window."""
+    # Play a sequence of videos in a resized OpenCV window.
     for video_path in video_paths:
         cap = cv2.VideoCapture(video_path)
         
@@ -80,7 +80,7 @@ def main():
             text = translate_text(text, target_language='en')
 
         # Check for stop command
-        if 'stop' in text.lower():
+        if 'stop' or 'terminate'  in text.lower():
             print("Stop command received. Exiting.")
             break
 
