@@ -10,7 +10,8 @@ def recognize_speech_from_mic(recognizer, mic):
         audio = recognizer.listen(source)
 
     try:
-        print("Recognizing speech...")
+        # print("Recognizing speech...")
+        # text = "hello how are you"
         text = recognizer.recognize_google(audio)
         print(f"Recognized text: {text}")
         return text
@@ -53,7 +54,7 @@ def play_videos_in_sequence(video_paths):
             cv2.imshow('Video', frame)
 
             # Exit if 'q' is pressed
-            if cv2.waitKey(int(25 / 1.5)) & 0xFF == ord('q'):  # 1.5x speed
+            if cv2.waitKey(int(25 / 2.5)) & 0xFF == ord('q'):  # 1.5x speed
                 cap.release()
                 cv2.destroyAllWindows()
                 return  # Exit function if 'q' is pressed
