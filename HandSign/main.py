@@ -80,7 +80,7 @@ def main():
             text = translate_text(text, target_language='en')
 
         # Check for stop command
-        if 'stop' or 'terminate'  in text.lower():
+        if 'exit' in text.lower():
             print("Stop command received. Exiting.")
             break
 
