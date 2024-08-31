@@ -343,7 +343,6 @@ def recognize_speech_from_mic(recognizer, mic):
         recognizer.adjust_for_ambient_noise(source)
         print("Listening...")
         audio = recognizer.listen(source, phrase_time_limit=5)
-
     try:
         text = recognizer.recognize_google(audio)
         print(f"Recognized text: {text}")
