@@ -52,10 +52,6 @@ To get started with this project, follow these steps:
 2. Speak into your microphone, and the application will recognize the speech, detect the language, translate it if necessary, and process the text.
 3. The processed text will be used to retrieve and play relevant videos corresponding to the recognized words.
 
-### Sign Language to Text Conversion
-1. Use the `sign_language_processing.py` script to upload a video in ISL.
-2. The script will segment the video, convert each segment into text, and display the recognized text.
-
 ### Uploading and Processing Custom Videos
 1. Prepare your video in Indian Sign Language.
 2. Upload the video using the frontend interface (or place it in the appropriate directory for testing).
@@ -66,12 +62,10 @@ To get started with this project, follow these steps:
 - **Speech Recognition:** Captures audio input and converts it into text using Google’s Speech Recognition API.
 - **Language Detection & Translation:** The text is analyzed to detect its language. If the detected language is not English, it is translated to English using the Google Translate API.
 - **Video Mapping:** The recognized words are mapped to corresponding videos representing ISL gestures. These videos are then played in sequence.
-- **Sign Language Processing:** ISL videos are segmented, and each segment is analyzed to recognize and convert gestures into text.
 
 ## Project Structure
 
 - `main.py`: The main script for running the speech recognition and video mapping.
-- `sign_language_processing.py`: Script to process ISL videos into text.
 - `video_mapping.py`: Contains functions for mapping recognized text to videos.
 - `videos/`: Directory containing ISL videos.
 - `requirements.txt`: Contains the list of dependencies required for the project.
@@ -89,3 +83,11 @@ The project requires the following Python libraries:
 Install all dependencies using:
 ```bash
 pip install -r requirements.txt
+```
+## Contributing
+Contributions are welcome! Please fork this repository and submit a pull request with your changes.
+
+## Credits
+This project was developed by Vaibhav Kothari. The custom video dataset and implementation were created me to ensure high-quality recognition of Indian Sign Language.
+
+Special thanks to all contributors and open-source projects that made this possible.
