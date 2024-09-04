@@ -11,7 +11,6 @@ This project is an Indian Sign Language (ISL) recognition system that converts h
 - [Project Structure](#project-structure)
 - [Requirements](#requirements)
 - [Contributing](#contributing)
-- [License](#license)
 - [Credits](#credits)
 
 ## Project Overview
